@@ -13,13 +13,13 @@ const Page = ({ title }) => (
         This is the {title} page.
       </p>
       <p>
-        <Link to="/">Home</Link>
+        <Link to={`${process.env.PUBLIC_URL}/`}>Home</Link>
       </p>
       <p>
-        <Link to="/about">About</Link>
+        <Link to={`${process.env.PUBLIC_URL}/about`}>About</Link>
       </p>
       <p>
-        <Link to="/settings">Settings</Link>
+        <Link to={`${process.env.PUBLIC_URL}/settings`}>Settings</Link>
       </p>
     </div>
 );
